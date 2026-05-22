@@ -9,7 +9,6 @@ export const DinerApp: React.FC = () => {
     menuItems,
     orders,
     activeTableId,
-    setActiveTableId,
     placeOrder,
     addStaffAlert,
     processPayment

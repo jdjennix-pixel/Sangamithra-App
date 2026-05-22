@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { AppProvider, useApp } from './context/AppContext';
+import { AppProvider } from './context/AppContext';
 import { DinerApp } from './components/DinerApp';
 import { KitchenKDS } from './components/KitchenKDS';
 import { WaiterApp } from './components/WaiterApp';
 import { AdminDashboard } from './components/AdminDashboard';
-import { LayoutGrid, Info } from 'lucide-react';
+import { LayoutGrid } from 'lucide-react';
 
 type AppRole = 'diner' | 'kds' | 'waiter' | 'admin';
 
