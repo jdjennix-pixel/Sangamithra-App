@@ -384,7 +384,7 @@ export const DinerApp: React.FC = () => {
               {/* Image if available */}
               {(item as any).imageUrl && (
                 <div style={{ width: '100px', height: '100px', flexShrink: 0, borderRadius: '16px' }} className="image-premium-outline">
-                  <img src={(item as any).imageUrl} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }} />
+                  <img src={import.meta.env.BASE_URL + (item as any).imageUrl.replace(/^\.?\//, '')} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }} />
                 </div>
               )}
 
